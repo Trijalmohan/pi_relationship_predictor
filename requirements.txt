@@ -1,0 +1,8 @@
+Flask
+numpy
+pandas
+matplotlib
+pyyaml
+scikit-learn
+requests
+pip freeze > requirements.txt
