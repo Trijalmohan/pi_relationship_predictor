@@ -1,39 +1,91 @@
-# 🔢 π Relationship Predictor  
-Predict your **future partner** or **closest friend** using your **date of birth hidden inside the digits of π (Pi)**.
+<h1 align="center">🧠 Pi Relationship Predictor</h1>
 
-This project takes a user's **DOB (DDMMYYYY)**, searches for that exact number sequence inside the first **1 billion digits of π**, and then predicts relationships based on where it's found.
-
-🌀 Built with **Python + Flask**  
-🎨 Includes a fully-styled **dark UI web interface**  
-⚡ Uses fast memory-mapped search on binary π data  
-📁 Large dataset excluded from repo (generated locally)
+<p align="center">
+  <b>Explore mathematical relationships through the digits of π (Pi) — a fun blend of math, data science, and prediction!</b>
+</p>
 
 ---
 
-## 🚀 Demo Preview
-
-*(Add screenshots after push completes)*  
-✅ Web app loads in browser  
-✅ Animated star background  
-✅ Fade-in result animation  
-✅ Shows digit position + context inside Pi  
+## 📘 Overview
+The Pi Relationship Predictor is a Python-based web application that explores mathematical patterns and correlations derived from the digits of π (Pi).  
+It predicts or visualizes "relationship trends" using data analysis and numerical modeling — blending math, data science, and fun experimentation.
 
 ---
 
-## 📌 Features
-
-| Feature | Status |
-|---------|--------|
-| Predict future partner (DOB + age) | ✅ |
-| Predict close friend (optional) | ✅ |
-| Search inside 1 billion digits of π | ✅ |
-| Binary mmap fast search (no RAM overload) | ✅ |
-| Clean UI with dark theme + CSS animations | ✅ |
-| Large dataset auto-generated locally | ✅ |
-| Mobile responsive layout | ✅ |
+## 🔗 Quick Links
+- [📘 Overview](#-overview)
+- [⚙️ Features](#️-features)
+- [🗂️ Project Structure](#️-project-structure)
+- [🧩 Installation & Setup](#-installation--setup)
+- [💡 Example Use-Cases](#-example-use-cases)
+- [🧰 Tech Stack](#-tech-stack)
+- [🚀 Future Improvements](#-future-improvements)
+- [📄 License](#-license)
 
 ---
 
-## 📂 Project Structure
+## ⚙️ Features
+✅ Interactive web interface built using **HTML**, **CSS**, and **JavaScript**  
+✅ Backend logic powered by **Python**  
+✅ Utility functions for Pi-based calculations  
+✅ Modular structure for easy maintenance  
+✅ Cleaned Git repository — no large files or unnecessary data  
+
+---
+
+## 🗂️ Project Structure
+pi-relationship-web/
+├── app.py # Main application script
+├── utils/ # Helper utilities
+│ ├── utils_date.py
+│ ├── utils_pi.py
+├── static/ # Front-end assets (CSS, JS)
+│ ├── style.css
+│ └── script.js
+├── templates/ # HTML templates
+│ └── index.html
+├── yaml/ # Config files (if used)
+└── README.md # Project documentation
+
+2️⃣ Install Dependencies
+
+If you have a requirements.txt file:
+
+pip install -r requirements.txt
+
+3️⃣ Run the App
+python app.py
 
 
+Then open http://localhost:5000
+ in your browser.
+
+ 💡 Example Use-Cases
+
+🔹 Visualize relationships between mathematical constants
+🔹 Analyze numeric patterns in Pi
+🔹 Experiment with custom predictive models or correlation analysis
+
+🧰 Tech Stack
+
+Backend: Python
+
+Frontend: HTML, CSS, JavaScript
+
+Data Handling: Custom Python utilities
+
+Version Control: Git + GitHub
+
+🚀 Future Improvements
+
+Add Flask-based API endpoints
+
+Introduce data visualization using Plotly or Matplotlib
+
+Integrate real-time user inputs
+
+Deploy on Render / Vercel
+
+📄 License
+
+This project is licensed under the MIT License — free to use, modify, and share.
