@@ -1,0 +1,3 @@
+# Ignore huge π data files
+data/external/pi_1Billion.txt
+data/processed/pi_digits.bin

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #050505;
+    color: white;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ✅ Stars BG */
+.stars {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('/static/bg.png') center/cover no-repeat;
+    opacity: 0.25;
+    z-index: -1;
+}
+
+/* ✅ Main Card */
+.card {
+    background: rgba(25, 25, 25, 0.85);
+    padding: 40px;
+    border-radius: 16px;
+    width: 420px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(255, 0, 153, 0.25);
+    backdrop-filter: blur(6px);
+    animation: drop 0.6s ease-out forwards;
+}
+
+@keyframes drop {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background: #1b1b1b;
+    color: white;
+    outline: none;
+    font-size: 15px;
+}
+
+/* ✅ Predict Button */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    background: #ff1476;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+button:hover {
+    background: #ff2e90;
+    box-shadow: 0 0 12px #ff2e90;
+}
+
+/* ✅ Output Box */
+.output-box {
+    margin-top: 20px;
+    background: #111;
+    padding: 15px;
+    border-radius: 8px;
+    height: 180px;
+    overflow-y: auto;
+    border: 1px solid #333;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+.fade-show { opacity: 1 !important; }
+
+/* ✅ Result Cards */
+.result-card {
+    text-align: left;
+    background: #181818;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    animation: fadeBlock 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeBlock {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.error { color: #ff4d6d; font-weight: bold; }
+.info { color: #c9c9c9; }
+code { background: #333; padding: 4px 6px; border-radius: 4px; }

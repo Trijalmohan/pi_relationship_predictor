@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>π Relationship Predictor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="stars"></div>
+
+<div class="card">
+    <h1>🔢 π Relationship Predictor</h1>
+    <p>Enter your date of birth and choose what to predict.</p>
+
+    <input id="dob" type="text" maxlength="8" placeholder="DDMMYYYY">
+    <select id="choice">
+        <option value="partner">Predict Partner</option>
+        <option value="friend">Predict Close Friend</option>
+        <option value="both">Predict Both</option>
+    </select>
+
+    <button onclick="run()">Predict</button>
+
+    <div id="output" class="output-box"></div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
